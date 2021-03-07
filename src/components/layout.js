@@ -2,13 +2,23 @@ import React from "react";
 import { Link } from "gatsby";
 const Layout = ({ children }) => (
   <div>
-    <header>
-      <nav>
-        <Link to="/">Home</Link>
+    <header className="container mx-auto bg-purple-300 p-5">
+      <nav className="flex justify-between">
+        <div>
+          <Link to="/">CBN!</Link>
+        </div>
+        <ul className="flex flex-row">
+          <li className="pr-5">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="pr-5">
+            <Link to="/about">About</Link>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>{children}</main>
-    <footer>fun footer</footer>
+    <footer className="bg-gray-100">fun footer</footer>
   </div>
 );
 
