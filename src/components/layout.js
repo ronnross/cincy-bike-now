@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 const Layout = ({ children }) => (
   <div>
-    <header className="container mx-auto bg-purple-300 p-5">
+    <header className="container mx-auto bg-red-300 p-5">
       <nav className="flex justify-between">
         <div>
           <Link to="/">CBN!</Link>

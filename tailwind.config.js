@@ -1,7 +1,61 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    colors: {
+      // ...colors,
+      gray: colors.trueGray,
+      blue: {
+        50: '#eaf0f7',
+        100: '#cadaeb',
+        200: '#a6c2de',
+        300: '#82aad1',
+        400: '#6897c7',
+        500: '#4d85bd',
+        600: '#467db7',
+        700: '#3d72ae',
+        800: '#3468a6',
+        900: '#255598',
+      },
+      green: {
+        50: '#eff5e6',
+        100: '#d8e6c0',
+        200: '#bed596',
+        300: '#a3c46c',
+        400: '#90b74d',
+        500: '#7caa2d',
+        600: '#74a328',
+        700: '#699922',
+        800: '#5f901c',
+        900: '#4c7f11',
+      },
+      yellow: {
+        50: '#fefceb',
+        100: '#fcf7cc',
+        200: '#faf1ab',
+        300: '#f8eb89',
+        400: '#f7e76f',
+        500: '#f5e356',
+        600: '#f4e04f',
+        700: '#f2dc45',
+        800: '#f0d83c',
+        900: '#eed02b',
+      },
+      red: {
+        50: '#f9ece3',
+        100: '#efd0ba',
+        200: '#e5b18c',
+        300: '#db925d',
+        400: '#d37a3b',
+        500: '#cb6318',
+        600: '#c65b15',
+        700: '#be5111',
+        800: '#b8470e',
+        900: '#ac3508',
+      },
+    },
     extend: {},
   },
   variants: {
